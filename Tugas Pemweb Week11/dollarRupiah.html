@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Konversi Kurs Rupiah ke Dollar</title>
+    <script>
+        function hitungKurs() {
+            var kurs = 14650; // nilai kurs dollar
+            var jumlahRupiah = document.getElementById("inputRupiah").value;
+            var hasilDollar = jumlahRupiah / kurs;
+            document.getElementById("hasilDollar").innerHTML = "Jumlah Dollar: $" + hasilDollar.toFixed(2);
+        }
+    </script>
+</head>
+<body>
+    <h1>Konversi Kurs Rupiah ke Dollar</h1>
+    <label for="inputRupiah">Masukkan jumlah uang Rupiah:</label>
+    <input type="number" id="inputRupiah">
+    <button onclick="hitungKurs()">Hitung</button>
+    <p id="hasilDollar"></p>
+</body>
+</html>
